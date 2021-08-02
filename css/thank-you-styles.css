@@ -1,0 +1,49 @@
+.bg-image {
+    background: url(../assets/img/background.jpg);
+    height: 200vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+.navbar {
+    font-size: 1.3rem;   
+}
+
+
+
+.container {
+    background: rgba(0, 0, 0, 0.4);
+    color: #f5f5f5;
+    padding: 40px;
+    margin-top: 15%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #888;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:#555;
+    border-radius: .25rem;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #212529;
+}
+
+
+@media only screen and (min-width: 576px) {
+    .container {
+        width: 450px!important;
+    }
+}

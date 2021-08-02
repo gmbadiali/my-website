@@ -1,0 +1,172 @@
+body {
+    color: #f5f5f5!important;
+}
+
+.bg-image {
+    background: url(../assets/img/background.jpg);
+    height: 260vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.navbar {
+    font-size: 1.3rem;
+}
+
+.container-md {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 40px 0;
+    padding: 50px;
+}
+
+.container-md h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.container-md p {
+    font-size: 20px;
+}
+
+.container a:hover {
+    color: white!important;
+}
+
+.contact-form { 
+    padding: 50px;
+    margin: 0 0 40px 0;
+}
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    margin-top: 15px;
+}
+
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none; 
+}
+
+.form-row textarea {
+    font-family: sans-serif;
+    font-size: 14px;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    min-height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+}
+
+.form-row .instructions {
+    color: #f5f5f5;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f5f5f5;
+    background-color: #3b42a5;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.form-row button:hover {
+    background-color: #5058c7;
+}
+
+.form-row button:active {
+    background-color: #222dce;
+}
+
+@media only screen and (min-width: 700px) {
+
+    .container-md,
+    .contact-form {
+        width: 600px!important;
+    }
+
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .form-row input[type="text"],
+    .form-row input[type="email"],
+    .form-row input[type="subject"],
+    .form-row textarea {
+        width: 250px;
+        height: initial;
+    }
+    
+    .form-row label {
+        text-align: right;
+        width: 130px;
+        margin-top: 7px;
+        padding-right: 20px;
+        margin-bottom: 15px;
+    }
+
+    .form-row .instructions {
+        margin-left: 130px;
+    }
+
+    .form-row button {
+        margin-left: 130px;
+    }
+    
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #888;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:#555;
+    border-radius: .25rem;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #212529;
+}
+
+@media only screen and (min-height:813px) {
+    .bg-image {
+        height: 150vh;
+    }
+}
